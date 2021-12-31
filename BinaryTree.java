@@ -17,7 +17,6 @@ public class BinaryTree{
     }
     public void insertBST(int value)
     {
-        l++;
         root=insertBST(root, value);
     }
 
@@ -39,7 +38,6 @@ public class BinaryTree{
     {
         int l=0;
     }
-
     
     public void PreOrder()
     {
@@ -67,9 +65,7 @@ public class BinaryTree{
         
         InOrder(root.left);
         System.out.print(root.data);
-        InOrder(root.right);
-        
-        
+        InOrder(root.right);       
     }
 
     public void PostOrder()
